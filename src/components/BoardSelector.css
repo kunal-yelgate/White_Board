@@ -1,0 +1,93 @@
+.board-selector {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.board-selector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.board-selector-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.add-board-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.add-board-btn:hover {
+  transform: scale(1.1);
+}
+
+.board-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.board-item {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.board-item:hover {
+  border-color: #667eea;
+  background: #f0f4ff;
+}
+
+.board-item.active {
+  border-color: #667eea;
+  background: #e7f0ff;
+}
+
+.board-name {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.board-item input {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid #667eea;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.rename-btn {
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.rename-btn:hover {
+  opacity: 1;
+}
