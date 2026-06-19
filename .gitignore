@@ -3,3 +3,4 @@ rooms.json
 .DS_Store
 *.log
 .vscode
+.env

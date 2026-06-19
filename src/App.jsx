@@ -35,7 +35,8 @@ function App() {
 
   useEffect(() => {
     // Initialize socket
-    const newSocket = io('http://localhost:4000');
+    const socketUrl = import.meta.env.VITE_SOCKET_URL || 'http://localhost:4000';
+    const newSocket = io(socketUrl);
     setSocket(newSocket);
 
     return () => newSocket.disconnect();
